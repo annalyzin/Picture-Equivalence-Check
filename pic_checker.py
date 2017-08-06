@@ -4,8 +4,8 @@ import numpy as np
 import cv2
 
 # set directories
-original = input("Input first directory path: ")
-revised = input("Input second directory path: ")
+original = raw_input("Input first directory path: ")
+revised = raw_input("Input second directory path: ")
 
 # get filenames in directory
 original_files = [f for f in listdir(original) if isfile(join(original, f))]
