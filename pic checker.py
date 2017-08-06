@@ -7,10 +7,7 @@ import cv2
 original = input("Input first directory path: ")
 revised = input("Input second directory path: ")
 
-# original = "/Users/Annalyn/Desktop/first/"
-# revised = "/Users/Annalyn/Desktop/second/"
-
-# get files in directory
+# get filenames in directory
 original_files = [f for f in listdir(original) if isfile(join(original, f))]
 revised_files = [f for f in listdir(revised) if isfile(join(revised, f))]
 
