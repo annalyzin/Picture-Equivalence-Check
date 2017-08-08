@@ -11,6 +11,9 @@ revised = raw_input("Input second directory path: ")
 original_files = [f for f in listdir(original) if isfile(join(original, f))]
 revised_files = [f for f in listdir(revised) if isfile(join(revised, f))]
 
+# sort
+original_files.sort()
+revised_files.sort()
 
 check = []
 for i in range(0, len(original_files)):
